@@ -1,0 +1,13 @@
+@import '../../styles/index.scss';
+
+.allObjectsList {}
+
+.allObjectsList__title {
+    text-align: left;
+    margin-bottom: 5rem;
+    @include RubberSize(margin-bottom, 50, 24, 24);
+}
+.allObjectsList__control{
+    display: flex;
+    justify-content: space-between;
+}
