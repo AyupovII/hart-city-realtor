@@ -1,0 +1,47 @@
+.table {
+    border-collapse: collapse;
+
+
+}
+
+.table__head {
+    th {
+        color: $white;
+        background-color: $blue;
+        padding: 1.6rem;
+        text-align: left;
+        border-right: 1px solid $white10;
+    }
+
+    th:first-child {
+        border-radius: 1.2rem 0 0 0;
+
+    }
+
+    th:last-child {
+        border-radius: 0 1.2rem 0 0;
+
+    }
+
+}
+
+.table__body {
+    tr {
+        background-color: $blue_light;
+        text-align: left;
+    }
+
+    td {
+        padding: 1.6rem;
+        min-height: 9.6rem;
+
+        @include vp_1024 {
+            padding: .8rem 1.2rem;
+            min-height: 6.4rem;
+        }
+    }
+
+    tr:nth-child(even) {
+        background-color: $dark_gray;
+    }
+}

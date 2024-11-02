@@ -1,0 +1,19 @@
+@import '../../styles/index.scss';
+
+.objectId {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    @include vp_1024 {
+        gap: 2.4rem;
+    }
+}
+
+.objectId__title {
+    text-align: left;
+    margin-bottom: 3.2rem;
+    @include vp_1024 {
+        margin-bottom: 2.4rem;
+    }
+}
