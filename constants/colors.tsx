@@ -1,0 +1,16 @@
+export const colors = {
+  blue: "#283851",
+  blue_medium: "#6B7484",
+  blue_semi_light: "#C5CFDD",
+  blue_light: "#ECEFF3",
+  gold: "#B9906A",
+  gold_semi_light: "#F2DBC6",
+  gray_dark: "#303030",
+  white: "#ffffff",
+  error: "#B30000",
+  dark_disabled: "rgba(39, 41, 55, 0.12)",
+  rgba10: "rgba(13, 36, 72, 0.10)",
+  rgba20: "rgba(255, 255, 255, 0.20)",
+  rgba_dark20: "rgba(40, 56, 81, 0.20)",
+  transition: ".35s ease-out",
+}
