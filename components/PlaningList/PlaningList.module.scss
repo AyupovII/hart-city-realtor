@@ -1,0 +1,91 @@
+@import '../../styles/index.scss';
+
+.planingList {}
+
+.planingList__type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planingList__icons {
+  display: flex;
+  padding: .6rem 1.2rem;
+  background-color: $white;
+  border-radius: 0.8rem;
+}
+
+.planingList__icon {
+  padding: 0.7rem 0.6rem;
+  background-color: transparent;
+  border-radius: .6rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  transition: all $transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue;
+
+    .planingList__tableTypeIcon,
+    .planingList__listTypeIcon {
+      color: $white;
+    }
+  }
+}
+
+.planingList__title {
+  text-align: left;
+  @include RubberSize(font-size, 16, 12, 12);
+  line-height: 120%;
+  color: $blue_medium;
+
+  @include vp_991 {
+    line-height: 140%;
+  }
+
+  @include min_vp_575 {
+    @include RubberSize(font-size, 16, 12, 4);
+  }
+}
+
+.planingList__tableTypeIcon,
+.planingList__listTypeIcon {
+  color: $gray_icon;
+  height: 1.8rem;
+  width: 2rem;
+}
+
+.planingList__icon--active {
+  background-color: $gold;
+
+  &:hover {
+    background-color: $gold;
+  }
+
+  .planingList__tableTypeIcon,
+  .planingList__listTypeIcon {
+    color: $white;
+    height: 1.8rem;
+    width: 2rem;
+  }
+}
+.planingList__content{
+  margin-top: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  @include vp_1280 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  @include vp_768 {
+    grid-template-columns: 1fr;
+  }
+}
+.planingList__content--list{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  
+}

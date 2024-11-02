@@ -1,0 +1,44 @@
+@import '../../styles/index.scss';
+
+.objectsFilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+
+  @include vp_768 {
+    flex-direction: column;
+
+    &>* {
+      width: 100% !important;
+    }
+  }
+}
+
+.objectsFilter__select {
+  flex-grow: 1;
+}
+
+.objectsFilter__slider {
+  max-width: 3.78rem;
+
+  @include vp_768 {
+    max-width: unset
+  }
+}
+
+.objectsFilter__control {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  margin-left: auto;
+
+  @include vp_768 {
+    flex-direction: column;
+  }
+}
+
+.objectsFilter__clear {
+  @include vp_768 {
+    display: none !important;
+  }
+}

@@ -1,0 +1,113 @@
+@import '../../styles/index.scss';
+
+.planingCard {
+  background: $white;
+  text-align: left;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+
+  @include vp_1024 {
+    padding: 2rem
+  }
+}
+
+.planingCard__title {
+  @include Manrope_bold;
+  font-size: 2.4rem;
+  color: $black;
+  margin-bottom: 1.6rem;
+}
+
+.planingCard__image {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.planingCard__common {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.planingCard__chip {
+  font-size: 1.6rem;
+  background-color: $gold24;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  width: fit-content;
+}
+
+.planingCard__info {
+  color: $black-v2;
+  display: flex;
+  gap: 0.8rem;
+
+  & span {
+    width: 1px;
+    height: 1.5rem;
+    background-color: $black;
+    opacity: 0.24;
+  }
+}
+
+.planingCard__columnRoom,
+.planingCard__area,
+.planingCard__floor {
+  @include Manrope_semibold;
+  font-size: 1.6rem;
+}
+
+.planingCard__prices {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.planingCard__price {
+  @include Manrope_semibold;
+  font-size: 3.6rem;
+  color: $black-v3;
+}
+
+.planingCard__credit {
+  font-size: 1.6rem;
+  color: $black-v2;
+}
+
+///////////////////
+.planingCard-list {
+  height: 19.5rem;
+  width: 100%;
+  display: flex;
+  background-color: $white;
+  padding: 2.4rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 1.2rem;
+
+  .planingCard__title {
+
+    margin-bottom: unset;
+  }
+
+  .planingCard__image {
+    height: 100%;
+    object-fit: contain;
+    width: 22.932rem;
+  }
+
+  .planingCard__prices {
+    align-items: flex-start;
+  }
+}
+
+.planingCard-common {
+  display: flex;
+}
+
+.planingCard__content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
